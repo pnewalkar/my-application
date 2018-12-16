@@ -24,18 +24,17 @@
 		</dependency>
 	
 	</dependencies>
-<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>aolshared2b-releases</name>
-        <url>https://cidemo.jfrog.io/cidemo/ci_demo</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>aolshared2b-snapshots</name>
-        <url>https://cidemo.jfrog.io/cidemo/ci_demo</url>
-    </snapshotRepository>
-</distributionManagement>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexus</id>
+		    <url>http://13.233.125.37:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexus</id>
+		    <url>http://13.233.125.37:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
 	
 <build>
     <plugins>
