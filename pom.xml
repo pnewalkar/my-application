@@ -28,7 +28,7 @@
     <repository>
         <id>central</id>
         <name>aolshared2b-releases</name>
-        <url>https://cidemo.jfrog.io/cidemo/ci_demmo</url>
+        <url>https://cidemo.jfrog.io/cidemo/ci_demo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
