@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion><groupId>in.javahome</groupId>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>in.javahome</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.5</version>
@@ -9,6 +10,12 @@
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.7</version>
+		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -23,18 +30,17 @@
 		</dependency>
 	
 	</dependencies>
-<distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>aolshared2b-releases</name>
-        <url>https://cidemo.jfrog.io/cidemo/Demo-live</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>aolshared2b-snapshots</name>
-        <url>https://cidemo.jfrog.io/cidemo/Demo-live</url>
-    </snapshotRepository>
-</distributionManagement>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexus</id>
+		    <url>http://35.231.153.198:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexus</id>
+		    <url>http://35.231.153.198:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
 	
 <build>
     <plugins>
