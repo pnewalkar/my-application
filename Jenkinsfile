@@ -12,6 +12,6 @@ node{
    }
    stage('Deployment Stage'){
       def mvnHome =  tool name: 'maven_3_5_0', type: 'maven'   
-      sh "${mvnHome}/bin/mvn Deploy"
+      sh "${mvnHome}/bin/mvn deploy"
    }
 }
